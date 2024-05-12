@@ -1,0 +1,422 @@
+body{
+    background-color:#ddedf3;
+    overflow: hidden;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none; /* Oculta as setas */
+            margin: 0; /* Remove margens para evitar deslocamento */
+        }
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;  /* Organiza verticalmente */
+    gap: 10px;  /* Espaçamento entre as linhas */
+    align-items: flex-start;  /* Alinhamento à esquerda */
+}
+
+.horizontal-item {
+    display: flex;
+    align-items: center;  /* Alinhamento horizontal */
+    gap: 10px;  /* Espaçamento entre elementos */
+    
+}
+
+input.circular {
+    width: 40px;  /* Tamanho dos campos de entrada */
+    height: 40px;
+    border: 2px solid #53cadf;  /* Borda dos campos */
+    border-radius: 50%;  /* Forma circular */
+    text-align: center;  /* Texto centralizado */
+    padding: 5px;  /* Espaçamento interno */
+    background-color:#f0f0f0;
+    
+}
+#InputCpfl,#inputCasa,#input2,#inputPensao,#inputFaculdade,#inputInternet,#inputCartao,#inputOutros{
+    display: flex;
+   width: 80px;
+   height: 80px;
+   font-size: 25px;
+}
+#contaPaga{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 340px;
+    display: none;
+
+    position: absolute;
+}
+#contaPagaPensao{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 60px;
+    margin-left: 340px;
+    display: none;
+
+    position: absolute;
+}
+#contaPagaCondo{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 470px;
+    display: none;
+
+    position: absolute;
+}
+#contaPagaCasa{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 400px;
+    margin-left: 1270px;
+    display: none;
+
+    position: absolute;
+}
+#contaPagaFaculdade{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 240px;
+    margin-left: 820px;
+    display: none;
+
+    position: absolute;
+}
+#contaPagaInternet{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 340px;
+    margin-left: 1260px;
+    display: none;
+
+    position: absolute; 
+}
+#contaPagaCredito{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 90px;
+    margin-left: 330px;
+    display: none;
+
+    position: absolute; 
+}
+#contaPagaOutros{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 250px;
+    margin-left: 820px;
+    display: none;
+
+    position: absolute; 
+}
+#FaculdadeFoto{
+   /* Espaçamento interno */
+    
+    border: black;
+    border-radius: 5px;  /* Bordas arredondadas */
+    cursor: pointer;  /* Cursor do mouse */
+   
+    margin-right: 10px;
+    background-color: white;
+    padding: 10px; 
+   
+
+    background-size: cover;  /* Ajusta a imagem para cobrir o botão */
+    background-position: center;  
+}
+
+button {
+    padding: 10px;  /* Espaçamento interno */
+    /* Sem bordas */
+    border-radius: 5px;  /* Bordas arredondadas */
+   border-color: black;
+
+    background-size: cover;  /* Cobrir todo o botão */
+    background-position: center;  /* Centralizar imagem */
+    cursor: pointer;  /* Cursor de mão */
+    background-color:#ddedf3;
+}
+
+#btnSomar:hover {
+    background-color:#87CEEB; /* Cor ao passar o mouse */
+}
+#enviar:hover {
+    background-color: #87CEEB; /* Cor ao passar o mouse */
+}
+
+img {
+    height: 80px;  /* Altura da imagem */
+    width: 280px;  /* Largura da imagem */
+    margin-right: 30px;  /* Espaçamento entre imagem e texto */
+    background-color: #87CEFA;
+}
+#condo,#casa,#pensao,#faculdade,#internet,#credito,#outros,#cpfl1,#anhangueraFoto,#contaPaga,#contaPagaCondo,#contaPagaPensao,#contaPagaCasa,#contaPagaFaculdade,#contaPagaInternet,#contaPagaCredito,#contaPagaOutros{
+   
+    border-radius: 5px;  /* Bordas arredondadas */
+    cursor: pointer;  /* Cursor do mouse */
+   
+    margin-right: 80px;
+    background-color: #ddedf3;
+    padding: 10px; 
+    border: none;
+    margin-top: 30px;
+
+
+    background-size: cover;  /* Ajusta a imagem para cobrir o botão */
+    background-position: center;  
+}
+#condominioFoto{
+width: 180px;
+height: 150px;
+padding: 10px; 
+margin-top: -35px;
+margin-left: 120px;
+background-color: #ddedf3;
+
+}
+#cpflFoto{
+width: 220px;
+height: 150px;
+padding: 1px; 
+background-color: #ddedf3;
+margin-top: -50px;
+}
+#InputCpfl{
+    margin-left: -115px;
+
+}
+#casaFoto{
+    display: flex;
+    height: 100px;  /* Altura da imagem */
+    width: 130px;  /* Largura da imagem */
+    margin-right: 50px;
+    margin-left: 650px;
+    margin-top: -250px;
+    position: absolute;
+    background-color: #ddedf3;
+
+}
+#inputCasa{
+    display: flex;
+    margin-left: 720px;
+    margin-top: -370px;
+}
+#input1{
+    display: flex;
+    margin-left: -50px;
+}
+#input2{
+    display: flex;
+    margin-left: -90px;
+}
+#pensaoFoto{
+    display: flex;
+    height: 150px;  /* Altura da imagem */
+    width: 150px;  /* Largura da imagem */
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: -50px;
+    background-color: #ddedf3;
+  
+
+}
+
+#input6{
+    display: flex;
+    margin-top: -360px;
+    position: relative;
+}
+#inputPensao{
+    display: flex;
+    margin-left: -90px;
+    margin-top: -30px;
+
+}
+#inputPensao2{
+    display: flex;
+    margin-top: -30px;
+}
+#faculdadeFoto{
+    display: flex;
+    margin-left: 520px;
+    margin-top: -200px;
+    width: 110px;
+    height: 140px;
+    background-color: #ddedf3;
+}
+#inputFaculdade{
+    display: flex;
+    margin-left: -50px;
+    margin-top: -200px;
+}
+#inputFaculdade1{
+    display: flex;
+    margin-left: 10px;
+    margin-top: -200px;
+
+}
+#internetFoto{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-left: 950px;
+    margin-top: -260px;
+    position: absolute;
+    background-color: #ddedf3;
+}
+#inputInternet{
+    display: flex;
+    margin-left:1050px ;
+    margin-top: -300px;
+    
+}
+#inputInternet1{
+    display: flex;
+    margin-top: -300px;
+}
+#cartaoCreditoFoto{
+    display: flex;
+    margin-top: -120px;
+    width: 120px;
+    height: 120px;
+    margin-left: 35px;
+    background-color: #ddedf3;
+}
+#inputCartao{
+    display: flex;
+    margin-left: -60px;
+    margin-top: -60px;
+}
+#inputCartao1{
+    display: flex;
+    margin-top: -50px;
+}
+#outrosFoto{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin-left: 500px;
+    margin-top: -190px;
+    background-color: #ddedf3;
+}
+#inputOutros{
+    display: flex;
+    margin-top: -220px;
+    margin-left: -40px;
+}
+#inputOutros1{
+    display: flex;
+    margin-top: -220px;
+}
+#pagamento{
+    width: 170px;
+    height: 170px;
+    margin-left: 960px;
+    margin-top: -220px;
+    font-size: 40px;
+    color: black;
+   
+    
+}
+input:invalid {
+    border: 2px solid red;
+    
+  }
+  input::placeholder {
+    color: #333;
+    font-style: italic;
+  }
+p{
+    font-size: 20px;
+    color: red;
+    margin-left: 965px;
+    margin-top: 560px;
+    display: none;
+    position: absolute;
+    font-weight: bold;
+}
+
+h3{
+    margin-left: 500px;
+    margin-top: -7px;
+    position: absolute;
+}
+
+#pagMenor{
+    margin-left: 1220px;
+    margin-top: -160px;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+}
+
+#verm{
+    margin-left: 70px;
+    color: red;
+}
+#btnSomar{
+    align-content: center;
+    margin-left: 570px;
+    margin-top: -55px;
+    border-radius: 8px;
+    width: 120px;
+    font-size: 18px;
+    background-color: rgb(133, 197, 69);
+}
+
+
+#enviar{
+   
+    margin-left: 750px;
+    margin-top: 10px;
+    width: 120px;
+   align-content: center;
+   border-radius: 8px;
+   font-size: 18px;
+   background-color: rgb(133, 197, 69);
+}
+
+/* Estilo básico para o modal */
+.modal {
+    display: none; /* O modal começa oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para manter o modal acima de outros elementos */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-conteudo {
+    align-items: center;
+    background-color: white;
+    width: 350px;
+    height: 120px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    color: red;
+}
+
+/* Estilo para o botão de fechar */
+.fechar {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+

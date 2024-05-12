@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Botões com Inputs em Linha</title>
+    <link rel="stylesheet" href="interface.css">
+    
+       
+
+       
+
+</head>
+<body>
+  
+    <h3>Controle das Contas Mensais</h3>
+    <div class="vertical-container">
+        
+       
+        <div class="horizontal-item">
+            <button id="cpfl1"><img src="cpfl.png" alt="" id="cpflFoto"></button>  <input type="number"  class="circular"  placeholder=" cpfl" id="InputCpfl">
+           <img src="contaPaga.png" alt="" id="contaPaga">
+<div class="horizontal-item">
+            <button id="condo"><img src="condominio.png" alt="" id="condominioFoto"></button>
+            <input class="circular" type="number" placeholder="condo" id="input2">  
+            <img src="contaPaga.png" alt=""  id="contaPagaCondo">
+          
+        </div>
+           
+        </div>
+       
+        <div class="horizontal-item"><div class="horizontal-item">
+            <button id="pensao"><img src="pensaoAlimenticia.png" alt="" id="pensaoFoto"></button>
+            <input class="circular" type="number" placeholder="pensão" id="inputPensao">
+            <img src="contaPaga.png" alt=""  id="contaPagaPensao">
+          
+        </div>
+            <button id="casa"><img src="minha casa.png" alt="" id="casaFoto"></button>
+            <input class="circular" type="number" placeholder="caixa" id="inputCasa">
+            <img src="contaPaga.png" alt=""  id="contaPagaCasa">
+        </div>
+        
+        <div class="horizontal-item">
+            <button id="faculdade"><img src="anhanguera.png" alt="" id="faculdadeFoto"></button>
+            <input class="circular" type="number" placeholder="facu" id="inputFaculdade">
+            <img src="contaPaga.png" alt=""  id="contaPagaFaculdade">
+        </div>
+        <div class="horizontal-item">
+            <button id="internet"><img src="internet.png" alt="" id="internetFoto"></button>
+            <input class="circular" type="number" placeholder="net" id="inputInternet">
+            <img src="contaPaga.png" alt=""  id="contaPagaInternet">
+        </div>
+        <div class="horizontal-item">
+            <button id="credito"><img src="cartaoCredito.png" alt="" id="cartaoCreditoFoto"></button>
+            <input class="circular" type="number" placeholder="cartão" id="inputCartao">
+            <img src="contaPaga.png" alt=""  id="contaPagaCredito">
+        </div>
+        <div class="horizontal-item">
+            <button id="outros"><img src="outros.png" alt="" id="outrosFoto"></button>
+            <input   class="circular"  type="text" placeholder="outros" id="inputOutros">
+            <img src="contaPaga.png" alt=""  id="contaPagaOutros">
+        </div>
+        
+        <input    class="circular"  type="number" placeholder="pg total" id="pagamento" required><p class="blink" id="paragrafo">Preencha este Campo!</p>
+            <input type="number"  class="circular" type="text" placeholder="total" id="pagMenor">
+            <button id="enviar">Salvar</button><button  id="btnSomar">Somar</button>
+    </div>
+    <div id="meuModal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar">x</span> 
+            <h2>AVISO IMPORTANTE!!</h2>
+            <h2>ESTE MÊS VOCÊ ESTA NO </h2>
+            <H2 id="verm">VERMELHO</H2>
+        </div>
+    </div>
+  
+<script  src="interface.js"></script>
+
+
+</body>
+</html>
