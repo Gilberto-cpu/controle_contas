@@ -167,16 +167,18 @@
              
  }
     //Adicionando eventos aos botões
-    somar.addEventListener('click', calcularSomaTotal);
-    btnCpfl.addEventListener('click', insertInput);
-    btnCondo.addEventListener('click', insertCondo);
-    btnCasa.addEventListener('click', insertCasa);
-    btnPensao.addEventListener('click', insertPensao);
-    btnFaculdade.addEventListener('click', insertFaculdade);
-    internet.addEventListener('click', insertInternet);
-    credito.addEventListener('click',insertCredito)
-    btnOutros.addEventListener('click',insertOutros)
-
+   
+    // Adicionando eventos aos botões
+    botao.somar.addEventListener('click', calcularSomaTotal);
+    botao.btnCpfl.addEventListener('click', insertInput);
+    botao.btnCondo.addEventListener('click', insertCondo);
+    botao.btnCasa.addEventListener('click', insertCasa);
+    botao.btnPensao.addEventListener('click', insertPensao);
+    botao.btnFaculdade.addEventListener('click', insertFaculdade);
+    botao.internet.addEventListener('click', insertInternet);
+    botao.credito.addEventListener('click', insertCredito);
+    botao.btnOutros.addEventListener('click', insertOutros);
+    
    })
 
  
